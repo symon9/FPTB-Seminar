@@ -15,7 +15,7 @@ font-family: 'Tilt Prism', cursive;
 */
 html, body {
   font-family: "Poppins", sans-serif;
-  min-height: 150vh;
+  min-height: 100vh;
 }
 
 .fptb-logo {
@@ -185,6 +185,18 @@ html, body {
   background-color: #000;
   width: 100%;
 }
+.members-hero .section-members .members-list-container .members-ul .ahmad .student-profile-container .student-profile-main-container .student-cover-and-profile-pic-container .student-profile-pic figure figcaption {
+  color: #fff;
+}
+.members-hero .section-members .members-list-container .members-ul .ahmad .student-profile-container .student-profile-main-container .student-details .student-details-ul li {
+  color: #fff;
+}
+.members-hero .section-members .members-list-container .members-ul .ahmad .student-profile-container .student-profile-main-container .student-details .student-details-ul li span {
+  color: #fff;
+}
+.members-hero .section-members .members-list-container .members-ul .ahmad .student-profile-container .student-profile-main-container .student-details .student-details-ul li .tel {
+  color: #fff;
+}
 .members-hero .section-members .members-list-container .members-ul li {
   padding: 15px;
   font-weight: 500;
@@ -193,14 +205,11 @@ html, body {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+  transition: all 2s ease-in-out;
 }
 .members-hero .section-members .members-list-container .members-ul li span {
   padding-right: 15px;
 }
-.members-hero .hero-section {
-  background-color: #000;
-}
-
 @media screen and (max-width: 768px) {
   .img-pic {
     width: 100%;
@@ -218,6 +227,7 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .members-hero .section-members .members-list-container .members-ul li {
+    transition: all 2s ease-in-out;
     letter-spacing: 2px;
   }
   .carousel-heading {
@@ -280,66 +290,81 @@ html, body {
 }
 
 /* ========== Users Profile ========== */
-/* mobile screen */
 #student-profile {
-  /*  */
-  display: none;
+  transition: all 2s ease-in-out;
 }
-#student-profile .student-profile-main-container {
+
+/* mobile screen */
+.student-profile-container {
+  transition: all 2s ease-in-out;
+}
+.student-profile-container .student-profile-main-container {
   margin-top: 5px;
   box-shadow: 0px 0px 10px #000;
   border-radius: 5px;
+  display: none;
+  transition: all 2s ease-in-out;
 }
-#student-profile .student-profile-main-container .student-cover-and-profile-pic-container {
+.student-profile-container .student-profile-main-container .student-cover-and-profile-pic-container {
   position: relative;
 }
-#student-profile .student-profile-main-container .student-cover-and-profile-pic-container .student-cover-pic {
+.student-profile-container .student-profile-main-container .student-cover-and-profile-pic-container .student-cover-pic {
   height: 100px;
   background-color: aliceblue;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-#student-profile .student-profile-main-container .student-cover-and-profile-pic-container .student-profile-pic {
+.student-profile-container .student-profile-main-container .student-cover-and-profile-pic-container .student-profile-pic {
   position: absolute;
   bottom: -82px;
   left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#student-profile .student-profile-main-container .student-cover-and-profile-pic-container .student-profile-pic figure figcaption {
+.student-profile-container .student-profile-main-container .student-cover-and-profile-pic-container .student-profile-pic figure figcaption {
   color: #000;
   font-weight: 900;
 }
-#student-profile .student-profile-main-container .student-cover-and-profile-pic-container .student-profile-pic figure img {
+.student-profile-container .student-profile-main-container .student-cover-and-profile-pic-container .student-profile-pic figure img {
   background-size: cover;
-  width: 70%;
+  width: 100px;
   border-radius: 50%;
+  border: 3px solid rgb(50, 50, 50);
 }
-#student-profile .student-profile-main-container .student-details {
+.student-profile-container .student-profile-main-container .student-details {
   margin-top: 60px;
 }
-#student-profile .student-profile-main-container .student-details .student-details-ul {
+.student-profile-container .student-profile-main-container .student-details .student-details-ul {
   padding-left: 0;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#student-profile .student-profile-main-container .student-details .student-details-ul li {
+.student-profile-container .student-profile-main-container .student-details .student-details-ul li {
   list-style: none;
   font-size: 12px;
-  padding: 6px;
+  padding: 6px 5px;
   color: #000;
+  min-width: 163px;
+  text-transform: uppercase;
 }
-#student-profile .student-profile-main-container .student-details .student-details-ul li span {
+.student-profile-container .student-profile-main-container .student-details .student-details-ul li span {
   color: #000;
   font-weight: 700;
   font-size: 12px;
 }
-#student-profile .student-profile-main-container .student-details .student-details-ul li a {
+.student-profile-container .student-profile-main-container .student-details .student-details-ul li a {
   text-decoration: none;
   font-size: 12px;
   color: #000;
 }
-#student-profile .student-profile-main-container .student-details .student-details-ul li .student-message {
+.student-profile-container .student-profile-main-container .student-details .student-details-ul li .student-message {
   margin-bottom: 10px;
 }
-#student-profile .student-profile-main-container .student-details .student-details-ul .student-message {
+.student-profile-container .student-profile-main-container .student-details .student-details-ul .student-message {
   margin-left: 90px;
   padding: 8px;
   border-radius: 15px;

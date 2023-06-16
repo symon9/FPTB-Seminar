@@ -186,6 +186,19 @@ html,body{
                 .ahmad{
                     background-color: #000;
                     width: 100%;
+
+                    .student-profile-container .student-profile-main-container .student-cover-and-profile-pic-container .student-profile-pic figure figcaption{
+                        color: #fff;
+                    }
+                    .student-profile-container .student-profile-main-container .student-details .student-details-ul li{
+                        color: #fff;
+                    }
+                    .student-profile-container .student-profile-main-container .student-details .student-details-ul li span{
+                        color: #fff;
+                    }
+                    .student-profile-container .student-profile-main-container .student-details .student-details-ul li .tel{
+                        color: #fff;
+                    }
                 }
                 li{
                     padding: 15px;
@@ -195,17 +208,18 @@ html,body{
                     font-size: 15px;
                     font-family: 'Roboto', sans-serif;
                     cursor: pointer;
+                    transition: all 2s ease-in-out;
 
                     span{
                         padding-right: 15px;
                     }
                 }
+                li:hover{
+                    //
+                }
             }
         }
         
-    }
-    .hero-section{
-        background-color: #000;
     }
     
 }
@@ -227,6 +241,7 @@ html,body{
 }
 @media screen and (min-width: 768px) {
     .members-hero .section-members .members-list-container .members-ul li {
+        transition: all 2s ease-in-out;
         letter-spacing: 2px;
       }
     .carousel-heading{
@@ -295,13 +310,22 @@ html,body{
 
 /* ========== Users Profile ========== */
 
-/* mobile screen */
 #student-profile{
-    /*  */display: none;
+    transition: all 2s ease-in-out;
+}
+
+
+/* mobile screen */
+.student-profile-container{
+    //display: none;
+    transition: all 2s ease-in-out;
     .student-profile-main-container{
         margin-top: 5px;
         box-shadow: 0px 0px 10px #000;
         border-radius: 5px;
+        display: none;
+        transition: all 2s ease-in-out;
+        
         .student-cover-and-profile-pic-container{
             position: relative;
             .student-cover-pic{
@@ -314,6 +338,9 @@ html,body{
                     position: absolute;
                     bottom: -82px;
                     left: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 figure{
                     figcaption{
                         color: #000;
@@ -322,8 +349,9 @@ html,body{
                     
                     img{
                     background-size: cover;
-                    width: 70%;
+                    width: 100px;
                     border-radius: 50%;
+                    border: 3px solid rgb(50, 50, 50);
                 }
                 }
                 
@@ -336,11 +364,17 @@ html,body{
             .student-details-ul{
                 padding-left: 0;
                 padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 li{
                     list-style: none;
                     font-size: 12px;
-                    padding: 6px;
+                    padding: 6px 5px;
                     color: #000;
+                    min-width: 163px;
+                    text-transform: uppercase;
                     span{
                         color: #000;
                         font-weight: 700;
@@ -349,7 +383,7 @@ html,body{
                     a{
                         text-decoration: none;
                         font-size: 12px;
-                         color: #000;
+                        color: #000;
 
                          
                     }
@@ -370,8 +404,11 @@ html,body{
         }
 
         .student-socials{
-
+            //
         }
+    }
+    .student-profile-main-container:hover{
+        //
     }
 }
 
