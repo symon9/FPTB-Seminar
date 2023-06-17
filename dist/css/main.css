@@ -325,6 +325,7 @@ html, body {
 .student-profile-container .student-profile-main-container .student-cover-and-profile-pic-container .student-profile-pic figure figcaption {
   color: #000;
   font-weight: 900;
+  text-transform: uppercase;
 }
 .student-profile-container .student-profile-main-container .student-cover-and-profile-pic-container .student-profile-pic figure img {
   background-size: cover;
@@ -373,4 +374,43 @@ html, body {
   background-color: #fff;
   font-size: 12px;
 }
-/* large screen *//*# sourceMappingURL=main.css.map */
+/* large screen */
+#myDiv {
+  display: none;
+}
+
+/* =====download button===== */
+.download {
+  margin: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.download-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-download {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn-download a {
+  color: #fff;
+  text-decoration: none;
+}
+.btn-download a:hover {
+  color: aliceblue;
+}
+
+/* Darker background on mouse-over */
+.btn-download:hover {
+  background-color: RoyalBlue;
+}/*# sourceMappingURL=main.css.map */
