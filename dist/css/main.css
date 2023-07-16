@@ -32,15 +32,22 @@ html, body {
 .menu .ul-links li a {
   text-decoration: none;
   color: #000;
-  padding: 3px 10px;
+  margin: 0 10px;
+  padding: 0px;
   font-size: 17px;
   float: left;
+  border-bottom: 3px solid #ffad69;
+  border-bottom-color: #fff;
 }
 .menu .ul-links li a:hover {
+  transition-timing-function: ease-in-out;
   color: #ffad69;
+  transition-duration: 0.4s;
+  border-bottom: 3px solid #ffad69;
 }
 .menu .ul-links li .active {
   color: #ffad69;
+  border-bottom-color: #ffad69;
 }
 
 @media screen and (max-width: 768px) {
@@ -425,5 +432,8 @@ html, body {
   }
   .fa-twitter {
     margin-left: 1.5rem;
+  }
+  .fa-xl {
+    font-size: 1.2em;
   }
 }/*# sourceMappingURL=main.css.map */
