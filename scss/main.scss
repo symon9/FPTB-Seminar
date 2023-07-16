@@ -458,3 +458,16 @@ html,body{
   .btn-download:hover {
     background-color: RoyalBlue;
   }
+  #footer-text{
+    font-size: 14px;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    #footer-text{
+        font-size: 12px;
+      }
+      .fa-twitter{
+        margin-left: 1.5rem;
+      }
+  }
